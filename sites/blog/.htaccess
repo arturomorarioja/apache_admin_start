@@ -1,0 +1,4 @@
+# TODO: Enable URL rewriting.
+# /articles/42 -> article.php?id=42 (internal rewrite)
+# /articles -> articles.php (internal rewrite)
+# /old-blog -> /articles (301 redirect)

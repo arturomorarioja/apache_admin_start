@@ -1,0 +1,2 @@
+# TODO: Require HTTP Basic Authentication for the intranet admin directory.
+# Create the password file yourself at /etc/apache2/auth/intranet.htpasswd.

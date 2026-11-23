@@ -1,0 +1,14 @@
+services:
+    apache:
+        build: .
+        ports:
+            - '8080:80'
+        volumes:
+            - ./apache/apache2.conf:/etc/apache2/apache2.conf:ro
+            - ./apache/vhosts.conf:/etc/apache2/sites-enabled/100-custom.conf:ro
+            - ./apache/auth:/etc/apache2/auth
+            - ./sites/default:/var/www/html:ro
+            - ./sites/shop:/var/www/shop:ro
+            - ./sites/blog:/var/www/blog:ro
+            - ./sites/intranet:/var/www/intranet:ro
+            - ./sites/errors:/var/www/errors:ro
